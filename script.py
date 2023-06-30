@@ -23,7 +23,7 @@ try:
                 case 4:
                     edited_img = cv2.cvtColor(img, cv2.COLOR_Lab2LBGR)
                 case 5:
-                    edited_img = cv2.cvtColor(img, cv2.COLOR_RGB2YUV_I420)
+                    edited_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
                 case 6:
                     edited_img = cv2.cvtColor(img, cv2.COLOR_Luv2LBGR)
                 case 7:
@@ -34,7 +34,8 @@ try:
                     edited_img = cv2.cvtColor(img, cv2.COLOR_XYZ2BGR)
                 case 10:
                     edited_img = cv2.cvtColor(img, cv2.COLOR_BGR2HLS)
-            cv2.imwrite(f"{filename}-sot-image-{i}.{os.path.splitext(filename)[1]}", edited_img)
+            cv2.imwrite(os.path.join(os.getcwd(), "processed", f"{filename}-sot-image-{i}.{os.path.splitext(filename)[1]}"), edited_img)
 except:
     print("An error occurred!")
 
+ 
