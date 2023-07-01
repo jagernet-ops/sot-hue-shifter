@@ -12,6 +12,6 @@ Then, simply follow the instructions provided by the program!
 
 ## Project Details:
 
-Check out my friend [python-42](http://github.com/python-42/) for more details! 🐻
+Check out my friend [Jake](http://github.com/python-42/) for more details! 🐻
 
 -- Michael J. Shalewski
